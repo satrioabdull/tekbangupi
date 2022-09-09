@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sidebar menu With Sub-menus | Using HTML, CSS & JQuery</title>
-    <link rel="stylesheet" href="animation UPI.css">
+    <link rel="stylesheet" href="animation_UPI.css">
+    <link rel="stylesheet" href="judul_diterima.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
   </head>
   <body>
-
     <div class="menu-btn">
       <i class="fas fa-bars"></i>
     </div>
@@ -18,12 +19,12 @@
         <i class="fas fa-times"></i>
       </div>
       <div class="menu">
-        <div class="item"><a href="Dashboard.html"><i class="fas fa-desktop"></i>Dashboard</a></div>
+        <div class="item"><a href="dashboard.html"><i class="fas fa-desktop"></i>Dashboard</a></div>
         <div class="item">
           <a class="sub-btn"><i class="fas fa-table"></i>Pengajuan Judul<i class="fas fa-angle-right dropdown"></i></a>
           <div class="sub-menu">
-            <a href="Judul Masuk.html" class="sub-item">Judul Masuk</a>
-            <a href="Judul Diterima.html" class="sub-item">Judul Diterima</a>
+            <a href="judul_masuk.html" class="sub-item">Judul Masuk</a>
+            <a href="#" class="sub-item">Judul Diterima</a>
           </div>
         </div>
         <div class="item">
@@ -41,8 +42,40 @@
         <div class="item"><a href="#"><i class="fas fa-info-circle"></i>About</a></div>
       </div>
     </div>
-    <section class="main">
-    </section>
+  
+  <div style="width: 60%;" class="mx-auto">
+    <div style="height: 200px">
+    </div>
+
+    <div style="background-color: aqua; height: 50px;" class="d-flex justify-content-between px-2">
+      <span class="my-auto">Pengajuan Proposal</span>
+      <span class="my-auto" style="background-color: yellow;">Hasil Verifikasi Pengajuan Proposal</span>
+      <span class="my-auto">Penjadwalan Bimbingan</span>
+    </div>
+
+    <table class="mt-4 bg-white table table-striped">
+      <tr>
+        <td>Judul Penelitian</td>
+        <td>:</td>
+        <td>Rancang bangun aplikasi marketplace barang bekas pakai</td>
+      </tr>
+      <tr>
+        <td>Dosen Pembimbing</td>
+        <td>:</td>
+        <td>1. Dr. Sri Mulyono</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>:</td>
+        <td>2. Kautsar Sayidan M.Kom</td>
+      </tr>
+      <tr>
+        <td>Upload SK Pembimbing</td>
+        <td>:</td>
+        <td><button>Download File</button></td>
+      </tr>
+    </table>
+  </div>
 
     <script type="text/javascript">
     $(document).ready(function(){
@@ -63,7 +96,7 @@
         $('.menu-btn').css("visibility", "visible");
       });
     });
-    </script>
+    </script> 
 
   </body>
 </html>

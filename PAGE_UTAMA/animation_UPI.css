@@ -1,20 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
   min-height: 100vh;
   background: url(3.png)no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.side-bar{
+/* #home-page{
+
+} */
+
+.side-bar {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(15px);
   width: 290px;
@@ -27,21 +31,21 @@ body{
   transition-property: left;
 }
 
-.side-bar.active{
+.side-bar.active {
   left: 0;
 }
 
-.side-bar .menu{
+.side-bar .menu {
   width: 100%;
   margin-top: 80px;
 }
 
-.side-bar .menu .item{
+.side-bar .menu .item {
   position: relative;
   cursor: pointer;
 }
 
-.side-bar .menu .item a{
+.side-bar .menu .item a {
   color: #fff;
   font-size: 16px;
   text-decoration: none;
@@ -50,36 +54,36 @@ body{
   line-height: 60px;
 }
 
-.side-bar .menu .item a:hover{
+.side-bar .menu .item a:hover {
   background: #8621F8;
   transition: 0.3s ease;
 }
 
-.side-bar .menu .item i{
+.side-bar .menu .item i {
   margin-right: 15px;
 }
 
-.side-bar .menu .item a .dropdown{
+.side-bar .menu .item a .dropdown {
   position: absolute;
   right: 0;
   margin: 20px;
   transition: 0.3s ease;
 }
 
-.side-bar .menu .item .sub-menu{
+.side-bar .menu .item .sub-menu {
   background: rgba(255, 255, 255, 0.1);
   display: none;
 }
 
-.side-bar .menu .item .sub-menu a{
+.side-bar .menu .item .sub-menu a {
   padding-left: 80px;
 }
 
-.rotate{
+.rotate {
   transform: rotate(90deg);
 }
 
-.close-btn{
+.close-btn {
   position: absolute;
   color: #fff;
   font-size: 20px;
@@ -88,7 +92,7 @@ body{
   cursor: pointer;
 }
 
-.menu-btn{
+.menu-btn {
   position: absolute;
   color: #fff;
   font-size: 20px;
@@ -96,7 +100,7 @@ body{
   cursor: pointer;
 }
 
-.main{
+.main {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -104,15 +108,15 @@ body{
   padding: 50px;
 }
 
-.main h1{
+.main h1 {
   color: rgba(255, 255, 255, 0.8);
   font-size: 60px;
   text-align: center;
   line-height: 80px;
 }
 
-@media (max-width: 900px){
-  .main h1{
+@media (max-width: 900px) {
+  .main h1 {
     font-size: 40px;
     line-height: 60px;
   }

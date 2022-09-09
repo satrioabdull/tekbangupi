@@ -1,0 +1,19 @@
+.bg-white {
+    background-color: #fff;
+}
+
+
+table {
+    border: 1px solid black;
+    margin: 5px;
+}
+
+table tr {
+    border: 1px solid black;
+    margin: 5px;
+}
+
+table tr td {
+    border: 1px solid black;
+    margin: 5px;
+}
